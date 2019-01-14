@@ -1,0 +1,14 @@
+water:
+ObjectID: original id.
+nodelabel: what appears in map originally.
+nodetype: 1 for storage tank, 2 pumping station, 3 for end-user node
+
+
+power:
+objectID
+nodelabel
+notetype: 1 for gate station, 2 for 23 kv substation,3for 12 kv substation. 
+When combined with water nodes, values of attributes of water nodes remain the same while the values for power node is equal to x+100 except for the cooordinates.
+
+Note: power lines are treated as straight lines to calculate Pf for now. Pf=1-exp[-(RR_start+RR_end)/2*L)]
+      In relaity, power lines are curves.
